@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
-    """Function checks for uppercase characters."""
-    if ord(str) >= 65 and ord(str) <= 90:
-        return True
+    """Function converts a lowercase letter to uppercase."""
+    if 'a' <= str <= 'z':
+        return chr(ord(str) - ord('a') + ord('A'))
     else:
-        return False
+        return str
