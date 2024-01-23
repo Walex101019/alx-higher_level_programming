@@ -1,10 +1,7 @@
-#include "lists.h"
-/**
- * print_python _ Entry point
- * @PyObject: parameter passed
- * @P: parameter passed
- * Return: Void
- */
+#include <Python.h>
+#include <object.h>
+#include <listobject.h>
+
 void print_python_list_info(PyObject *p)
 {
 	long int size = PyList_Size(p);
